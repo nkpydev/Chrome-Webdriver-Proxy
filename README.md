@@ -10,11 +10,11 @@ Setting Proxy is _**Optional**_, so the program will work even if you dont speci
 
 Import chrome_proxy_driver_setup into your program like:
 
-> from utility.chrome_proxy_driver_setup import ChromeProxySetup as CPS
-
-> b = CPS() # if you dont want to use proxy
-
-> b = CPS('127.0.0.1', 5000, 'proxy_auth_user', 'proxy_auth_pwd') # 'ip','port','auth_user','auth_pwd'
+```python
+from utility.chrome_proxy_driver_setup import ChromeProxySetup as CPS
+b = CPS() # if you dont want to use proxy
+b = CPS('127.0.0.1', 5000, 'proxy_auth_user', 'proxy_auth_pwd') # 'ip','port','auth_user','auth_pwd'
+```
 
 ### To Do:
 - Add extension cleanup

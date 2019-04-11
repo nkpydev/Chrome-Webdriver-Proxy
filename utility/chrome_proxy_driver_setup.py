@@ -9,7 +9,7 @@ import os
 from os.path import exists
 # --- Project Internal Imports --- #
 from utility.config import BASE_DIR
-from utility.extension_clean_up import cleanup
+
 
 # --- ChromeProxySetup Class --- #
 class ChromeProxySetup(object):
@@ -89,7 +89,7 @@ class ChromeProxySetup(object):
         proxy_zip_filename = ('%s.zip' %self.proxy_host)
 
         self.extension_file = os.path.join(BASE_DIR, proxy_zip_filename)
-
+        
         if not exists(self.extension_file):
             with zipfile.ZipFile(self.extension_file, 'w') as prxtn:
                 prxtn.writestr('manifest.json', manifest_json)
