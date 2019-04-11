@@ -3,7 +3,7 @@ from utility.chrome_proxy_driver_setup import ChromeProxySetup as CPS
 import time
 
 b = CPS() # No Proxy
-c = CPS('127.0.0.1',5000,'auth_user','auth_pwd') # With Proxy
+c = CPS('127.0.0.1',5000,'proxy_auth','proxy_pwd') # With Proxy
 driver1 = b.set_proxy() 
 driver1.maximize_window()
 driver1.get('http://yahoo.com')
