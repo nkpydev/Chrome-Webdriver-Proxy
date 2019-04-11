@@ -13,8 +13,8 @@ from utility.config import BASE_DIR
 
 # --- ChromeProxySetup Class --- #
 class ChromeProxySetup(object):
+    
     def __init__(self,proxy_host=None,proxy_port=None,proxy_auth_user=None,proxy_auth_pwd=None):
-        # self.browser = ''
         self.proxy_host = proxy_host
         self.proxy_port = proxy_port
         self.proxy_auth_user = proxy_auth_user
