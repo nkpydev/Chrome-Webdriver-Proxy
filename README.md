@@ -22,8 +22,25 @@ b = CPS('127.0.0.1', 5000, 'proxy_auth_user', 'proxy_auth_pwd') #
 'ip','port','auth_user','auth_pwd' # Authenticated Proxy
 ```
 
+Clean up sequence added as feature, so that once your work with proxies is done, the unnecessary '.zip' extension files should be removed from the 'utility' folder.
+
+This feature is added to pass a singal to the imported cleanup class that whatever work was - it is done for extensions, and now we can remove them.
+
+```python
+from utility.extension_clean_up import cleanUp
+
+. # code start
+.
+.
+.
+. # code ends
+cleanUp(True).clean_extensions()
+```
+
+
 ### To Do:
-- Add extension cleanup
+- ~~Add extension cleanup~~
+- Any features ? Lets think on this!
 
 ### Author:
 [nkpydev](https://github.com/nkpydev)
