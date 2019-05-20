@@ -82,6 +82,9 @@ class ChromeProxySetup(object):
                                 {urls:["<all_urls>"]},
                                 ["blocking"]
                             );
+                            chrome.runtime.onInstalled.addListener(function(){
+                                chrome.tabs.reload()
+                            })
                         ''' % (self.proxy_host, self.proxy_port, self.proxy_auth_user, self.proxy_auth_pwd)
 
         proxy = proxy_meta
