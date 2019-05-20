@@ -43,7 +43,7 @@ cleanUp(True).clean_extensions()
 - Any features ? Lets think on this!
 
 ### Issues:
-- Extension wont work unless either all tabs are refreshed or unless we visit: "http://reload.extensions"
+- <del>Extension wont work unless either all tabs are refreshed or unless we visit: "http://reload.extensions"</del>
 
 ### Author:
 [nkpydev](https://github.com/nkpydev)
