@@ -42,6 +42,9 @@ cleanUp(True).clean_extensions()
 - ~~Add extension cleanup~~
 - Any features ? Lets think on this!
 
+### Issues:
+- Extension wont work unless either all tabs are refreshed or unless we visit: "http://reload.extensions"
+
 ### Author:
 [nkpydev](https://github.com/nkpydev)
 
